@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        html {
+            font-size: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            font-size: 18px;
+        }
+
+        .container > div {
+            /* font-size: 2em; */
+            border: 2px solid black;
+            width: 50%;
+        }
+        .container > div > div{
+            /* font-size: 2em; */
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont {
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+    <main class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eveniet recusandae incidunt voluptates
+            inventore doloremque, ipsum voluptatum facilis odit nulla unde sunt qui quam aut accusamus blanditiis rerum
+            deserunt distinctio provident libero quaerat perferendis quia possimus? Incidunt sint sapiente ipsum.
+            Eligendi ad accusamus asperiores repellendus?
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae porro provident temporibus quaerat
+                facilis eum rerum saepe, voluptas nam expedita. Enim, doloremque quidem?
+            </div>
+        </div>
+    </main>
+    <div class="mycont">
+        this is footer.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Queries</title>
+    <style>
+        @media only screen and (max-width:455px) {
+            body{
+                background-color:white;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        body{
+            background-color: red;
+        }
+        .box{
+          background-color: steelblue;
+          margin: 3px;
+          padding: 3px;
+          height: 344px;
+          width: 344px;
+        }
+        .boxes{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey i am a bodyguy!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes::before{
+            content: "i am a good boy";
+            color: yellow;
+        }
+
+        .boxes::after{
+            content: "i am a good boy";
+            color: rgb(77, 33, 159);
+        }
+        /* .box:nth-child(odd){
+            background-color: red;
+        }
+
+        .box:nth-child(even){
+            background-color: aqua;
+        }
+
+        .box:nth-last-child(1){
+            color:brown
+        } */
+       
+        .box::selection{
+            color: purple;
+            background-color: salmon;
+        }
+        .box::first-letter{
+            color:peru;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box.</div>
+        <div class="box">Hey I am a box.</div>
+        <div class="box">Hey I am a box.</div>
+    </div>
+</body>
+</html>

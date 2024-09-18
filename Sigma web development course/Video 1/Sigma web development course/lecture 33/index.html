@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    :root{
+        --color:red;
+        /* --seccolor:blue;
+        --trdcolor:yellow; */
+        --frtcolor:aqua;
+
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        display: flex;
+    }
+    ul li{
+        list-style: none;
+        padding: 20px;
+    }
+    ul li:first-child{
+        background-color: var(--color);
+    }
+    .nav2{
+        background-color: var(--frtcolor);
+    }
+    .nav3{
+        background-color: var(--color);
+    }
+    .nav4{
+        background-color: var(--frtcolor);
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li  class="nav nav1">HOME</li>
+            <li class="nav nav2">PRODUCT</li>
+            <li class="nav nav3">CONTACT</li>
+            <li class="nav nav4">ABOUT</li>
+        </ul>
+    </div>
+</body>
+</html>
